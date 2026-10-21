@@ -1,0 +1,47 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    font-size: 40px;
+    color: red;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    color: brown;
+    text-align: center;
+}
+
+/* 화면 너비가 700px 이하일 때 */
+@media (max-width:600px) {
+    body {
+        background-color: pink;
+    }
+    h1 {
+        font-size: 25px;
+        color: blue;
+    }
+
+    p {
+        font-size: 15px;
+        color: coral;
+    }
+}
+
+/* 화면 너비가 500px 이하일 때 */
+@media (max-width:500px) {
+    body {
+        background-color: rgb(143, 216, 147);
+    }
+    h1 {
+        font-size: 20px;
+        color: blue;
+    }
+
+    p {
+        font-size: 12px;
+        color: coral;
+    }
+}
