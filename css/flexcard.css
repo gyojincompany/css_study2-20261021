@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    /* 박스안에 padding 값이 들어가도 전체 너비는 지정값 그대로 유지 */
+}
+
+/* 상품 리스트 전체 -> 부모 */
+div.product-list {
+    display: flex;    
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 40%;
+
+}
+
+/* 상품 카드 */
+div.product {
+    flex:1; /* 부모의 너비 공간을 1:1 비율로 나눠가져라 */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* 상품 이미지 영역 */
+div.image-box {
+    width: 100%;
+    height: 400px;    
+}
+
+/* 상품 이미지 스타일 */
+div.image-box img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    object-fit: contain; /* 이미지 짤리는 현상 방지 */
+    aspect-ratio: 1 / 1.2; /* 이미지 가로 / 세로 비율 조정 */
+}
+
+/* 상품 이름 */
+p.product-name {
+    font-size: 15px;
+}
+
+/* 상품 가격 */
+div.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 구매하기 버튼 */
+a.buy-button {
+    background-color: rgb(63, 63, 236);
+    padding: 10px;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block; /* width 속성 적용 */
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* 마우스 포인터가 버튼 위에 올라오면 적용되는 디자인 */
+a.buy-button:hover { 
+    background-color: rgb(5, 5, 143);
+}
