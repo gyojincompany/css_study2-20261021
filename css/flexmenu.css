@@ -5,6 +5,8 @@ div.header {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
+    height: 50px;
+    width: 800px;
 }
 
 div.menu {
@@ -17,7 +19,7 @@ div.menu {
 
 h2.logo { /* 로고 스타일 */
     color: rgb(40, 40, 221);
-    font-size: 40px;
+    font-size: 30px;
 }
 
 div.login { /* 로그인 버튼 스타일 */
