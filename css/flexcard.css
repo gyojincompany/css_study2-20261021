@@ -68,3 +68,10 @@ a.buy-button {
 a.buy-button:hover { 
     background-color: rgb(5, 5, 143);
 }
+
+/* 모바일 화면에서 상품을 세로 정렬로 배치 */
+@media (max-width:900px) {
+    div.product-list {
+        flex-direction: column;
+    }
+}
