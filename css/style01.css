@@ -32,3 +32,14 @@ span.new { /* 자식 */
 
 
 }
+
+div.top-button {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    width: 50px;
+
+    position: fixed; /* 그 위치에 고정됨 */
+    right: 20px;
+    bottom: 20px;
+}
