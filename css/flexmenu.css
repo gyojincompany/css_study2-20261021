@@ -1,0 +1,28 @@
+div.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+div.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+h2.logo { /* 로고 스타일 */
+    color: rgb(40, 40, 221);
+    font-size: 40px;
+}
+
+div.login { /* 로그인 버튼 스타일 */
+    padding: 10px;
+    background-color: rgb(37, 37, 151);
+    color: white;
+    border-radius: 7px;
+}
