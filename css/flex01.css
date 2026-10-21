@@ -1,0 +1,22 @@
+div.container { /* 부모요소 */
+    display: flex; /* 자식요소들을 가로로 정렬 */
+    flex-direction: row; /* 기본값->가로로 정렬(생략 가능)*/
+    /* flex-direction: column; /* 자식요소들을 세로로 정렬 */
+    gap: 50px; /* 자식요소들 간의 간격 조절->방향과 관계 없이 간격 조절  */
+    /* justify-content: flex-start; /* 기본값->가로배치라면 왼쪽정렬 */ 
+    /* justify-content: center; /* 가로배치라면 가운데 정렬 */
+    /* justify-content: flex-end; /* 가로배치라면 오른쪽 정렬 */
+    /* justify-content: space-between; /* 균등 정렬 */
+    /* justify-content: space-around; /* 첫번째와 마지막 부분을 제외한 공간을 균등 배분 */
+    justify-content: space-evenly; /* 요소들 사이의 모든 공간을 균등 배분 */
+    background-color: lightgray;
+    padding: 10px;
+}
+
+div.item { /* 자식요소 */
+    background-color: black;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+}
+

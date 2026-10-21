@@ -1,0 +1,25 @@
+div.container {
+    display: flex;
+    gap: 10px;
+}
+
+div.item1 {
+    flex:1; /* 부모의 공간을 나눠 가짐 -> 3개의 아이템이 같은 비율로 공간을 나눠 가짐 */
+    background-color: aquamarine;
+    padding: 20px;
+    /* width: 33%; */
+}
+
+div.item2 {
+    flex:2; /* 부모의 공간을 나눠 가짐 -> 3개의 아이템이 같은 비율로 공간을 나눠 가짐 */
+    background-color: aquamarine;
+    padding: 20px;
+    /* width: 33%; */
+}
+
+div.item3 {
+    flex:3; /* 부모의 공간을 나눠 가짐 -> 3개의 아이템이 같은 비율로 공간을 나눠 가짐 */
+    background-color: aquamarine;
+    padding: 20px;
+    /* width: 33%; */
+}

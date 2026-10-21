@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+            background-color: aqua;
+            height: 200px;
+            gap: 10px;
+            align-items: flex-start; /* 부모 지정 속성 */
+        }
+
+        .box {
+            background-color: blueviolet;
+        }
+
+        .box2 {
+            border: 1px solid red;
+            align-self: flex-end; /* 자식 지정 속성 -> 특정 자식 하나만 따로 정렬하기 */
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">상자 1</div>
+        <div class="box box2">상자 2</div>
+        <div class="box">상자 3</div>
+    </div>
+</body>
+</html>
