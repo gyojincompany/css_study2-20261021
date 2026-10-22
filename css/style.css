@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "맑은 고딕";
+    color:#333;    
+}
+
+/* 헤더:로고와 사용자 메뉴 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.user-menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* 상단 네비게이션 */
+.nav {
+    display: flex;
+    gap: 35px;
+    padding: 20px;
+    background-color: #f5f3f3;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: darkblue;
+    /* font-weight: 900; */
+    text-decoration: underline;
+}
+
+/* 메인 배너 */
+.banner {
+    margin: 25px 10px 25px 20px;
+    background-color: #f1f1f1;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.banner h2 {
+    margin-top: 0;
+}
+
+/* 왼쪽 메뉴 + 오른쪽 상품카드 목록 */
+.layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 10px;
+}
+
+
+/* 왼쪽 메뉴 */
+.sidebar {
+    width: 150px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.sidebar a:hover {
+    color: darkblue; 
+    text-decoration: underline;
+}
+
+/* 오른쪽 상품 영역 */
+.main-content {
+    flex: 1; /* 왼쪽 메뉴 옆에 남은 빈공간을 전부 이 본문 영역이 차지하도록 늘려라 */    
+}
+
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 상품 카드 목록 */
+.products {
+    display: flex;
+    flex-wrap: wrap; /* 상품목록 가로로 나열할 때, 공간이 부족하면 다음 줄로 자동 줄 바꿈 */
+    gap: 20px;
+}
+
+/* 상품 카드 */
+.product {
+    width: 30%; /* 한 줄에 상품 카드가 대략 3개 정도 들어가게 30% 설정 */
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+/* 상품 이미지 */
+.product img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 상품 이름 */
+.product h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* 상품 가격 */
+.price {
+    font-size: 15px;
+}
+
+.footer {
+    background-color: #222;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+/* 모바일 화면에서 왼쪽 메뉴를 위로 이동 */
+@media (max-width:600px) {
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .sidebar h3 {
+        width: 100%;
+    }
+
+
+}
